@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Frame 6.png" alt="logo de alura">
+    </header>
+    <div class="container">
+        <div>
+            <textarea id="texto-entrada" rows="5" cols="30" placeholder="Ingrese el texto aquí"></textarea><br>
+            <p>Solo letras minúsculas y sin acentos.</p>
+            <button id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            <button id="copiar" onclick="copiarMensaje()" style="display: none;">Copiar</button>
+            <p id="mensajeA"></p>
+            <p id="mensajeB"></p>
+        </div>
+        <div>
+            <textarea id="texto-encriptado" rows="5" cols="30" readonly></textarea>
+        </div>
+        <img id="imagen-muneco" src="imagenes/Muñeco.png" alt="Muñeco" style="display: Block;">
+    </div>
+</body>
+</html>
